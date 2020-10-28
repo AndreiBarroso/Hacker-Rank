@@ -1,3 +1,6 @@
+Solução do Algoritmo para achar a primeira letra que não se repete.
+
+
 var str = "Google"
 var primeiraUnica = ""
 var mapLetras = new Map()
