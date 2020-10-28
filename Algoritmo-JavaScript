@@ -1,0 +1,22 @@
+var str = "Google"
+var primeiraUnica = ""
+var mapLetras = new Map()
+
+
+for (var i = 0; i < str.length; i++) {
+    var letra = str.charAt(i).toLocaleLowerCase();
+    
+    if (mapLetras.has(letra)) {
+        mapLetras.set(letra, mapLetras.get(letra) + 1)
+    } else {
+        mapLetras.set(letra, 1)
+    }
+}
+
+for (let [key, value] of mapLetras) {
+    if (value == 1) {
+        console.log(key)
+        break
+        
+    }
+}
